@@ -1,0 +1,107 @@
+body{
+    margin: 10px;
+    background: linear-gradient(to right, rgb(255, 239, 239), rgb(71, 80, 71));
+}
+.gridmaker{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(9, 1fr);
+    grid-gap: 1px;
+    border: 5px solid black;
+    padding: 3px;
+    min-height: 80vh;
+    min-width: 80vh;
+    
+    
+
+}
+.gridmaker > button{
+    cursor: pointer;
+    outline: none;
+    border: 1px solid rgba(158, 158, 158, 0.5);
+}
+
+
+h2{
+    text-align: center;
+}
+.para{
+    background-color: white;
+    
+}
+.para:hover{
+    background-color: rgba(0, 117, 185, 0.7) ;
+    transition: 0.25s ease-in-out;
+}
+.para:active{
+    background-color: rgba(0, 117, 185, 0.9);
+}
+.normb{
+    background-color: white;
+    
+}
+.normb:hover{
+    background-color: rgba(148, 148, 148, 0.7) ;
+    transition: 0.25s ease-in-out;
+}
+.normb:active{
+    background-color: rgba(116, 116, 116, 0.9);
+}
+.del{
+    background-color: orange;
+    font-weight: bolder;
+    
+}
+.del:hover{
+    background-color: rgba(255, 94, 0, 0.7);
+    transition: 0.25s ease-in-out;
+}
+.del:active{
+    background-color: rgba(255, 94, 0, 0.9);
+}
+.diffb{
+    background-color: rgb(114, 176, 233);
+}
+.diffb:hover{
+    background-color: rgba(0, 140, 255, 0.7);
+    transition: 0.25s ease-in-out;
+}
+.diffb:active{
+    background-color: rgba(0, 140, 255, 0.9);
+}
+
+.span2{
+    grid-column: span 2;
+    background-color: orange;
+    font-weight: bolder;
+}
+.span2:hover{
+    background-color: rgba(255, 94, 0, 0.7);
+    transition: 0.25s ease-in-out;
+}
+.span2:active{
+    background-color: rgba(255, 94, 0, 0.9);
+}
+.ui{
+    padding: 5px;
+    color: white;
+    font-size: larger;
+    font-weight: bolder;
+    text-align: right;
+    
+    grid-column: 1/-1;
+    background-color: rgb(65, 65, 65);
+    grid-row: span 2;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+.uo{
+    padding: 5px;
+    background-color: blanchedalmond;
+    font-size: small;
+    text-align: right;
+    color: grey;
+    grid-column: 1/-1;
+    word-wrap: break-word;
+    word-break: break-all;
+}
